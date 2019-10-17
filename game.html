@@ -38,24 +38,30 @@
             }
         };
 
-
+    var player;
     var game = new Phaser.Game(config); //to create game use .game (function)
+
+    
     
     function preload ()
     {
-        this.load.image('background', 'assests/background.jpg');   
-        this.load.image('Spaceship','assests/Spaceship.png',{Width:20,Height:10});
+        this.load.image('background', 'assets/background.jpg');   
+        this.load.image('Spaceship','assets/Spaceship.png');
+        // this.load.image('background', 'assests/background.jpg');
+
+    
     }
 
     function create ()
     {
-        this.add.image(960, 540, 'background');
-        this.add.image(650,590,'Spaceship');
+         this.add.image(960, 540, 'background');
+         this.add.image(650,590,'Spaceship');
         
     }
 
     function update ()
     {
+    
     }
 
 
